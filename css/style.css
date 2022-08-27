@@ -503,6 +503,13 @@
   background-position: center;
 }
 
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
 .cta-text-box {
   color: #45260a;
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
@@ -516,4 +523,5 @@
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
+  margin-bottom: 4.8rem;
 }

@@ -563,12 +563,37 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form class="cta-form">
-                <label for="fullname">Full Name</label>
-                <input id="fullname" type="text" placeholder="Kunal Singhdeo" />
 
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="me@example.com" />
+              <form class="cta-form">
+                <div>
+                  <label for="fullname">Full Name</label>
+                  <input
+                    id="fullname"
+                    type="text"
+                    placeholder="Kunal Singhdeo"
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="me@example.com" />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" required>
+                    <option>Please choose one option</option>
+                    <option value="Friends and family">
+                      Friends and Family
+                    </option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Others">Others</option>
+                    <option></option>
+                  </select>
+                </div>
+
                 <button class="btn">Sign up now</button>
               </form>
             </div>
