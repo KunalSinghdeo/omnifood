@@ -26,6 +26,7 @@ Paragraph-default:1.6
 Primary: #e67e22
 #fdf2e9
 #fae5d3
+#45260a
 
 Tints: #cf711f
 Shades:
@@ -153,6 +154,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:active {
   display: inline-block;
@@ -162,6 +164,10 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   font-weight: 600;
+
+  /* Only for .btn */
+  border: none;
+  cursor: pointer;
 
   /* transition in orignal *state* */
   /* transition: background-color 0.3s; */
@@ -195,6 +201,18 @@ body {
 
   /* add border inside*/
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -231,6 +249,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.51);
 }
 
 /*HELPER CLASSES*/
